@@ -147,14 +147,12 @@ $(function() {
 	$('#video_inline_link').click(function(e) {
 		e.preventDefault();
 		_paq.push(['trackGoal', 2]); // video_inline conversion
-		_gaq.push(['_trackEvent', 'Video', 'Inline Play']);
 		open_modal();
 	});
 
 	$('#video_link').click(function(e) {
 		e.preventDefault();
 		_paq.push(['trackGoal', 3]); // video_thumbnail conversion
-		_gaq.push(['_trackEvent', 'Video', 'Thumbnail Play']);
 		open_modal();
 	});
 
@@ -170,11 +168,9 @@ $(function() {
 
 		<? if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'chrome') !== false) { ?>
 			_paq.push(['trackGoal', 1]); // download conversion
-			_gaq.push(['_trackEvent', 'Install Button', 'click', '(Chrome)']);
 			chrome.webstore.install();
 		<? } else { ?>
 			_paq.push(['trackGoal', 4]); // download conversion
-			_gaq.push(['_trackEvent', 'Install Button', 'click', '(Firefox)']);
 			var params = {
 				"Flagger": {
 					URL: '/addon/firefox/flagger-1.2.0.xpi',
