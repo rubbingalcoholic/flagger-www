@@ -7,6 +7,22 @@
 			<strong><a href="mailto:jeff@rubbingalcoholic.com">Contact</a></strong>
 			
 		</footer>
+		<!-- Piwik -->
+		<script type="text/javascript">
+			var _paq = _paq || [];
+			<? if (LIVE) { ?>
+				_paq.push(['trackPageView']);
+				_paq.push(['enableLinkTracking']);
+				(function() {
+					var u="//piwik.rubbingalcoholic.com/";
+					_paq.push(['setTrackerUrl', u+'piwik.php']);
+					_paq.push(['setSiteId', 1]);
+					var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+					g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+				})();
+			<? } ?>
+		</script>
+		<!-- End Piwik Code -->
 	</body>
 
 	

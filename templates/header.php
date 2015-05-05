@@ -20,24 +20,6 @@ else
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dhnmamoofolkjakgakfncmdbmmfofaam">
-		
-
-		<!-- Piwik -->
-		<script type="text/javascript">
-			var _paq = _paq || [];
-			<? if (LIVE) { ?>
-				_paq.push(['trackPageView']);
-				_paq.push(['enableLinkTracking']);
-				(function() {
-					var u="//piwik.rubbingalcoholic.com/";
-					_paq.push(['setTrackerUrl', u+'piwik.php']);
-					_paq.push(['setSiteId', 1]);
-					var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-					g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-				})();
-			<? } ?>
-		</script>
-		<!-- End Piwik Code -->
 
 		<!-- Begin stupid Facebook OpenGraph tags that I hate -->
 		<meta property="og:title" content="Flagger" />
@@ -46,20 +28,6 @@ else
 		<meta property="og:url" content="http://flagger.io/?lulz=<?=urlencode($_GET['lulz'])?>" />
 		<meta property="og:description" content="<?=$share_flags?>Troll the NSA! Flagger is the app that adds red flag keywords (like BOMB, TALIBAN and ANTHRAX) into the web addresses you visit." />
 		<!-- End stupid Facebook OpenGraph tags that I hate -->
-
-		<script type="text/javascript">
-			var _rtn_options = {
-				// This is just a delay. You can have the animation start after page load.
-				delay: 1500,
-
-				// This shows debug stuff in the console. For testing
-				debug: true,
-
-				// Always show the widget? Useful for testing lol.
-				always_show_widget: false
-			}
-		</script>
-		<script src="//fightforthefuture.github.io/reset-the-net-widget/widget/rtn.js"></script>
 	</head>
 	<body>
 		<div id="fb-root"></div>
