@@ -173,7 +173,7 @@ $(function() {
 			_paq.push(['trackGoal', 4]); // download conversion
 			var params = {
 				"Flagger": {
-					URL: '/addon/firefox/flagger-1.2.0.xpi',
+					URL: '/addon/firefox/flagger-1.3.1.xpi',
 					IconURL: '/images/icon_logo_32.png',
 					
 					toString: function () { return this.URL; }
