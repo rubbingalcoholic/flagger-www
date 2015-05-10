@@ -166,7 +166,11 @@ $(function() {
 	$('.download_link').click(function(e) {
 		e.preventDefault();
 
-		<? if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'chrome') !== false) { ?>
+		<? if (
+			strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'chrome') !== false
+			||
+			strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'opera') !== false
+			) { ?>
 			_paq.push(['trackGoal', 1]); // download conversion
 			chrome.webstore.install();
 		<? } else { ?>
