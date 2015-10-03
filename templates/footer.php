@@ -23,8 +23,6 @@
 			<? } ?>
 		</script>
 		<!-- End Piwik Code -->
-		<script type="text/javascript">var _cc_options = {animation: 'banner'};</script>
-		<script type="text/javascript" src="https://fightforthefuture.github.io/usafreedom-widget/widget.min.js"></script>
 	</body>
 
 	
