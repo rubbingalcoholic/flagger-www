@@ -175,6 +175,7 @@ $(function() {
 			chrome.webstore.install();
 		<? } else { ?>
 			_paq.push(['trackGoal', 4]); // download conversion
+			/*
 			var params = {
 				"Flagger": {
 					URL: '/addon/firefox/flagger-1.3.1.xpi',
@@ -184,6 +185,8 @@ $(function() {
 				}
 			};
 			InstallTrigger.install(params);
+			*/
+			window.location.href = 'https://addons.mozilla.org/en-US/firefox/addon/flagger/';
 		<? } ?>
 	});
 });
